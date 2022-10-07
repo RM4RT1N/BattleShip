@@ -414,6 +414,10 @@ def game():
     while True:
         if shots_player1 == 0 and shots_player2 == 0:
             print (' End game nobody wins')
+            print(f"Board of {player1}")
+            draw_board(data_first[0],nums,letters)
+            print(f"Board of {player2}")
+            draw_board(data_second[0],nums,letters)
             break
         else:
             up_window()
@@ -463,6 +467,10 @@ def game():
         up_window()
         if shots_player1 == 0 and shots_player2 == 0:
             print (' End game nobody wins')
+            print(f"Board of {player1}")
+            draw_board(data_first[0],nums,letters)
+            print(f"Board of {player2}")
+            draw_board(data_second[0],nums,letters)
             break
         else:
             up_window()
